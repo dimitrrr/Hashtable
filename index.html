@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="forms">
+        <div class="form1">
+            <h2>Добавление</h2>
+            <form action="#" name="add">
+                <div class="field"><label>Ключ (строка):</label><input type="text" name="name1" maxlength="20" required></div>
+                <div class="field"><label>Значение:</label><input type="text" name="value" required></div>
+                <input type="submit" value="Добавить" class="addButton">      
+            </form>
+        </div>
+        <div class="form2">
+            <h2>Поиск</h2>
+            <form action="#" name="find">
+                <div class="field"><label>Ключ (строка):</label><input type="text" name="name2" maxlength="20" required></div>
+                <input type="submit" value="Найти" class="findButton">      
+            </form>
+            <p class="res"></p>            
+        </div>
+        <div class="form3">
+            <h2>Удаление</h2>
+            <form action="#" name="delete">
+                <div class="field"><label>Ключ (строка):</label><input type="text" name="name3" maxlength="20" required></div>
+                <input type="submit" value="Удалить" class="deleteButton">      
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <table class="hash table-fixed-head" cellspacing="0">
+            <thead>
+                <tr>
+                    <th data-type="string">Ключ</th>
+                    <th data-type="number">Значение</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="jquery-3.5.1.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

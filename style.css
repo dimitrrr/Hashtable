@@ -1,0 +1,76 @@
+body {
+    position: absolute;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.forms {    
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+form div {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+[type="submit"] {   
+    margin-top: 20px; 
+    font-size: 20px;
+    font-family: "Times new roman";
+}
+
+input{
+    font-size: 20px;
+    font-family: "Times new roman";
+}
+
+.table-fixed-head {
+  table-layout: fixed;
+  border-collapse: collapse;
+  height: 50vh;
+}
+
+.table-fixed-head th,
+.table-fixed-head td {
+  padding: 5px;
+  text-align: center;
+  width: 33.333vw;
+}
+
+.table-fixed-head thead {
+  background-color: #333;
+  color: #FDFDFD;
+}
+
+.table-fixed-head thead tr {
+  display: block;
+  position: relative;
+}
+
+.table-fixed-head tbody {
+  display: block;
+  overflow: auto;
+  width: 100%;
+  height: calc(50vh - 30px);
+}
+
+.table-fixed-head tbody tr:nth-child(even) {
+  background-color: #DDD;
+}
